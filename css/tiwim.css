@@ -1,0 +1,193 @@
+#myDiv {
+    width: 150px;
+    border: solid 1px #2AA7DE;
+    background: #6CC8EF;
+    text-align: center;
+    padding: 4em .5em;
+    margin: 1em;
+    float: left;
+}
+
+#myList {
+    margin: 1em;
+    float: left;
+}
+
+#tiwimFloatMenu {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background: #FFF;
+    /*position: inherit;*/
+}
+
+#myList UL {
+    padding: 0px;
+    margin: 0em 1em;
+}
+
+#myList LI {
+    width: 100px;
+    border: solid 1px #2AA7DE;
+    background: #6CC8EF;
+    padding: 5px 5px;
+    margin: 2px 0px;
+    list-style: none;
+}
+
+#tiwim-edit-content {
+    width: 80vw;
+    max-width: calc(100vw - 360px);
+    height: 100vh;
+    display: inline-block;
+}
+
+.tiwim-has-change {
+    position: relative;
+}
+
+.tiwim-has-change::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: .7em;
+    background: #3D656B;
+    color: #3D656B;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 16px; /* pixel unit */
+    padding: 35px 50px; /* pixel unit */
+    border-radius: 50%;
+    font-size: 75px;
+    text-align: center;
+    background: #1779ba;
+    color: #fefefe;
+}
+
+#tiwim-tool-area {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: #e7e7e7;
+    width: 20vw;
+    min-width: 320px;
+    max-width: 380px;
+    height: 100vh;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    z-index: 9999;
+    padding-bottom: 20px;
+}
+
+#tiwim-tool-area .on-off-container {
+    text-align: right;
+    margin: 10px 20px 0;
+    padding: 6px;
+    background: #f0f0f0;
+}
+
+#tiwim-tool-area .logo-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#tiwim-tool-area .logo-container img {
+    width: 80%;
+}
+
+#tiwim-tool-area .changes-container {
+    background: #f0f0f0;
+    margin: 20px;
+}
+
+#tiwim-tool-area .changes-container .changes-header {
+    background: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+#tiwim-tool-area .changes-container .changes-content {
+    padding: 12px;
+    overflow: auto;
+}
+
+#tiwim-tool-area .changes-container .changes-content .item {
+    background: rgba(255, 255, 255, 0.85);
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+#tiwim-tool-area .changes-container .changes-content .item:last-child {
+    margin-bottom: 6px;
+}
+
+#tiwim-tool-area .changes-container .changes-content .item span {
+    display: block;
+}
+
+#tiwim-tool-area .changes-container .changes-content .item span.title {
+    margin-bottom: 10px;
+}
+
+#tiwim-tool-area .actions-container {
+    padding: 0 20px;
+}
+
+#tiwim-tool-area .actions-container .item {
+    display: inline-block;
+    background: #E0E0E0;
+    min-width: 110px;
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    padding: 8px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#tiwim-tool-area .actions-container .item:last-child {
+    float: right;
+}
+
+#tiwim-tool-area .actions-container .item img {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+#tiwim-tool-area .actions-container .item span {
+    width: calc(100% - 30px);
+    text-transform: uppercase;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*div:hover,p:hover,a:hover,li:hover,h1:hover,h2:hover,h3:hover,h4:hover,h5:hover,h6:hover {*/
+/*border: 1px rgba(20, 0, 255, 0.74) solid !important;*/
+/*}*/
+
+/*body *:hover {*/
+/*border: 1px rgba(20, 0, 255, 0.74) solid !important;*/
+/*}*/

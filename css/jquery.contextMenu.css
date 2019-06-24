@@ -1,0 +1,121 @@
+/* Generic context menu styles */
+.contextMenu {
+    position: absolute;
+    width: 120px;
+    z-index: 99999;
+    border: solid 1px #ccc;
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.contextMenu li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contextMenu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+    height: 20px;
+    background-position: 6px center;
+    background-repeat: no-repeat;
+    outline: none;
+    padding: 1px 5px 1px 28px;
+}
+
+.contextMenu li:hover a {
+    color: #fff;
+    background-color: #3399ff;
+}
+
+.contextMenu li.disabled a {
+    color: #aaa;
+    cursor: default;
+}
+
+.contextMenu li.disabled:hover a {
+    background-color: transparent;
+}
+
+.contextMenu li.separator {
+    border-top: solid 1px #ccc;
+}
+
+/*
+	Adding Icons
+
+	You can add icons to the context menu by adding
+	classes to the respective LI element(s)
+*/
+
+#tiwimFloatMenu li.tiwim-comment A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/page_white_edit.png); }
+#tiwimFloatMenu li.tiwim-edit A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/page_white_edit.png); }
+#tiwimFloatMenu li.tiwim-cut A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/cut.png); }
+#tiwimFloatMenu li.tiwim-copy A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/page_white_copy.png); }
+#tiwimFloatMenu li.tiwim-paste A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/page_white_paste.png); }
+#tiwimFloatMenu li.tiwim-delete A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/page_white_delete.png); }
+#tiwimFloatMenu li.tiwim-quit A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/door.png); }
+
+#tiwimFloatMenu li.tiwim-add A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/door.png); }
+#tiwimFloatMenu li.tiwim-add-button A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/door.png); }
+#tiwimFloatMenu li.tiwim-add-text A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/door.png); }
+#tiwimFloatMenu li.tiwim-add-list A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/door.png); }
+#tiwimFloatMenu li.tiwim-add-link A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/door.png); }
+#tiwimFloatMenu li.tiwim-duplicate A { background-image: url(https://labs.abeautifulsite.net/archived/jquery-contextMenu/demo/images/page_white_paste.png); }
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.contextMenu li .dropdown a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+    height: 20px;
+    outline: none;
+    padding: 1px 5px 1px 28px;
+    background: #eee no-repeat 6px center;
+}
+
+.contextMenu li .dropdown li:hover a {
+    color: #fff;
+    background-color: #3399ff;
+}
+
+.contextMenu li:not(.disabled):hover .dropdown {
+    display: block;
+    background: #eee;
+    left: 120px;
+    padding: 0;
+    width: 23px;
+    margin-top: -22px;
+    cursor: pointer;
+}
+
+
+#tiwimMenu {
+    display: inline;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: green;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 50%;
+}
+
+.hoverItem {
+    border: 2px solid blue!important;
+}
